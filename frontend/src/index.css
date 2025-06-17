@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (width <= 600px) {
+
+  .footer{
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    
+  }
+
+  #map{
+    grid-column: span 2;
+  }
+
+}
