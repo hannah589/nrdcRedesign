@@ -1,0 +1,315 @@
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+}
+
+.header_contact{ 
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 8px 5px;
+  background-color: var(--black);
+}
+
+header .header_contact ul li .material-symbols-outlined {
+  
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 20
+}
+
+.location, .phone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.location span, .phone span{
+  color: white;
+  height: 24px;
+  width: 24px;
+}
+
+.header_contact li{
+  list-style: none;
+}
+
+.header_contact li a{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_contact li a:hover{
+  text-decoration: underline;
+}
+
+.header_contact{
+  display: flex;
+}
+
+.header_contact ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  margin-right: 40px;
+ }
+
+.header_contact ul li {
+  text-decoration: none;
+}
+
+.phone .material-symbols-outlined{
+  color:white;
+}
+
+#navbar_logo {
+  height: 60px;
+}
+
+
+#desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 1rem 1.2rem;
+  height: 90px;
+  border-bottom: 1px solid #E8E8E8;
+  box-shadow: 0px 0px 8px 0px  rgb(0, 0, 0, 0.1 );
+  background-color: #ffffff;
+}
+
+
+
+nav ul{
+  display:flex;
+  justify-content: center;
+  align-items: center; /*center vertically */
+  margin: 0;
+  gap:1rem; 
+  list-style: none; /*remove bullet point)*/
+}
+
+
+
+a, btn {
+  transition: all 0.3s ease;
+}
+
+
+nav a{
+  display: flex;
+  align-items: center;
+  font-size: large;
+  font-weight: 400;
+  color:#212121;
+  text-decoration: none;
+  padding: 12px 8px; 
+  height: 100%;
+  
+
+
+}
+
+#desktop-nav li:hover, #hamburger-nav li:hover{
+  /*background-color: var(--grey);
+  padding: 12px 8px;
+  border-radius: 8px;
+  gap:1rem;
+  */
+  text-underline-offset: 1rem;
+  text-decoration: underline;
+
+}
+
+
+nav ul li .active{
+  text-underline-offset: 1rem;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: large;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  color: #212121;
+  padding: 14px 8px;
+  background-color: inherit;
+  font-family: inherit;
+  display: flex;
+  
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 14px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/*  dropdown button hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  cursor: pointer;
+  text-underline-offset: 1rem;
+  text-decoration: underline;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--grey);
+  color: black;
+  text-underline-offset: 1rem;
+  padding: 12px 16px;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+/*hamburger menu*/
+#hamburger-nav img{
+ height: 50px;
+ width: auto;
+}
+
+#hamburger-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 1rem;
+  height: 11vh;
+  background-color: #ffffff;
+  display: none;
+  border-bottom: 2px solid var(--grey);
+}
+
+.mobilebtn-container{
+  display: flex;
+  gap: .2rem;
+}
+
+
+.mobile-btn{
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+
+.mobile-menu-btn {
+  background-color: white;
+  border: none;
+}
+
+
+.mobile-menu-btn .material-symbols-outlined {
+  padding: 1.5px;
+  
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.mobile-btn:hover, button {
+ cursor: pointer;
+}
+
+
+.sidebar{
+  position: fixed;
+  top:0;
+  right:0;
+  list-style: none;
+  background-color: #ffffff;
+  height: 100vh;
+  border-left: 1px solid black;
+  width: 250px;
+  z-index: 999;
+  display: flex; /* view hidden sidebar none/flex*/
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 12px;
+
+}
+
+
+.sidebar li{
+  width: 100%;
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  
+}
+
+.sidebar li:hover{
+  width: 100%;
+
+  border-radius: 8px;
+}
+
+.close-box{
+ display: flex;
+ justify-content: flex-end;
+ 
+}
+
+.sidebar .close-box:hover{
+  background-color: white;
+}
+
+.close-btn{
+  padding: 4px 0px 2px 4px;
+  cursor: pointer;
+  border-radius: 25px;
+  border: none;
+}
+
+.close-btn:hover{
+  padding: 4px 0px 2px 4px;
+  border-radius: 25px;
+}
+
+
+
+
+

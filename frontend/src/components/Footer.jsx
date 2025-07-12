@@ -1,5 +1,6 @@
 import styles from './Footer.module.css'
 import { Link } from 'react-router-dom'
+import OpeningTime from './OpeningTime';
 
 function Footer() {
   return (
@@ -35,39 +36,8 @@ function Footer() {
 
           <div className={styles.footerBox} >
             <h2>Opening Hours</h2>
-
-              <table>
-                <tbody>
-                  <tr>
-                    <td>Monday</td>
-                    <td>9:00am - 5:00pm</td>
-                  </tr>
-                  <tr>
-                    <td>Tuesday</td>
-                    <td>9:00am - 5:00pm</td>
-                  </tr>
-                   <tr>
-                    <td>Wednesday</td>
-                    <td>9:00am - 5:00pm</td>
-                  </tr>
-                  <tr>
-                    <td>Thursday</td>
-                    <td>Closed</td>
-                  </tr>
-                  <tr>
-                    <td>Friday</td>
-                    <td>9:00am - 5:00pm</td>
-                  </tr>
-                  <tr>
-                    <td>Saturday</td>
-                    <td>By Appointment Only</td>
-                  </tr>
-                  <tr>
-                    <td>Sunday</td>
-                    <td>Closed</td>
-                  </tr>
-                </tbody>
-              </table>
+            <OpeningTime/>
+          
       </div>
 
           <div className={styles.footerBox}>
@@ -109,6 +79,8 @@ function Footer() {
             ></iframe>
           </div>
         </section>
+
+        <hr/>
 
         <div className={styles.copyright_box}>
           <span className={styles.copyright}>© 2025 North Road Dental Clinic. All Rights Reserved</span>

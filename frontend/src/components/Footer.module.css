@@ -1,20 +1,23 @@
 .footer{
   display: grid;
-  gap: 1rem;
+  gap: 1.2rem;
   grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
   padding: 2em;
+  background-color: var(--black);
 }
 
 .footerBox ul li, td, p, a{
   font-size: 16px;
+  color: var(--white);
 }
 
 .footerBox h2{
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
+  color: var(--white);
 }
 
 .footerBox ul{
@@ -22,8 +25,8 @@
 }
 
 .footerBox ul li{
-  margin-bottom: 8px;
-  color: #231F20;
+  margin-bottom: 10px;
+  color: var(--white);
   cursor: pointer;
   list-style: none;
   text-decoration: none;
@@ -58,22 +61,19 @@ padding: 0px 16px 8px 0px;
   display: flex;
   align-items: center;
   padding: 0px 0px 2em 2em;
+  border-top: 0.5px solid var(--white);
 }
 
 .copyright {
   color: var(--black);
 }
 
-@media (width <= 600px) {
+@media only screen and (max-width: 600px) {
 
   .footer{
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    
+    padding: 0px 2em;
   }
-
-  #map{
-    grid-column: span 2;
-  }
-
+  
 }

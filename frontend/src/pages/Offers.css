@@ -1,0 +1,64 @@
+.heading-noimg{
+  margin: 2rem 0px  4rem;
+}
+
+.page-margin .heading-noimg p{
+ margin-bottom: 0px;
+}
+
+/*Offers section*/
+.offers-section{
+  border:none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+}
+
+/*card*/
+@media (width <= 1200px) {
+  .offers-section{
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem ;
+  }
+}
+
+@media (width <= 600px) {
+  .offers-section{
+    grid-template-columns: 1fr;
+  }
+}
+
+.card{
+  height: 100%;
+  max-width: 28rem;
+  border-radius: 8px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); 
+  overflow: hidden;
+}
+
+.img_box{
+  width: 100%;  
+}
+
+.card img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h4{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  margin-bottom: 16px;
+  color: #111827;
+}
